@@ -3,11 +3,13 @@
  */
 package edu.fiu.bilal.smartgadget;
 
+import edu.fiu.jit.SelfCheckCapable;
+
 /**
  * @author Student
  *
  */
-public class Processingunit {
+public class Processingunit implements SelfCheckCapable{
 	private String type;
 	private int size;
 	private double version;
@@ -20,7 +22,7 @@ public class Processingunit {
 	}
 	public void transmitData() {
 		/**
-		 * It will transmits data into usful information.
+		 * It will transmits data into useful information.
 		 */
 	}
 
@@ -43,6 +45,16 @@ public class Processingunit {
 		/**
 		 * With the help of this we can check Diagnostics of data.
 		 */
+	}
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "ProcessingUnit";
+	}
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 	
 }

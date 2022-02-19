@@ -3,11 +3,14 @@
  */
 package edu.fiu.bilal.smartgadget;
 
+import edu.fiu.jit.SelfCheckCapable;
+import edu.fiu.jit.SelfCheckUtils;
+
 /**
  * @author Student
  *
  */
-public class Sensor {
+public class Sensor implements SelfCheckCapable{
 	private String type;
 	private int range;
 	private int size;
@@ -26,6 +29,16 @@ public class Sensor {
 		/**
 		 * It can measure the speed of the vehicle.
 		 */
+	}
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "Sensor Activated";
+	}
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.randomCheck(0.10);;
 	}
 	
 

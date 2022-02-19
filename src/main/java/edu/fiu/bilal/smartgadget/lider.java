@@ -3,13 +3,14 @@
  */
 package edu.fiu.bilal.smartgadget;
 
-import sensor;
+import Sensor;
+import edu.fiu.jit.SelfCheckCapable;
 
 /**
  * @author Student
  *
  */
-public class lider extends sensor {
+public class lider extends Sensor{
 	private double range;
 	private String type;
 	private double rotationFrequency;
