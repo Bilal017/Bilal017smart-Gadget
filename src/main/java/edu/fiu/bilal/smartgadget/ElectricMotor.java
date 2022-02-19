@@ -12,7 +12,7 @@ import edu.fiu.jit.SelfCheckUtils;
  */
 public class ElectricMotor implements SelfCheckCapable {
 	private int motorCapacity;
-	private string motorType;
+	private String motorType;
 	private int efficiency;
 	private int power;
 	
@@ -39,6 +39,6 @@ public class ElectricMotor implements SelfCheckCapable {
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.10);;
+		return SelfCheckUtils.randomCheck(0.10);
 	}
 }

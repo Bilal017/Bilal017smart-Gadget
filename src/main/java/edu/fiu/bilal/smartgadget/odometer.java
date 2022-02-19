@@ -3,7 +3,7 @@
  */
 package edu.fiu.bilal.smartgadget;
 
-import sensor;
+
 import edu.fiu.jit.SelfCheckCapable;
 import edu.fiu.jit.SelfCheckUtils;
 
@@ -35,7 +35,7 @@ public class odometer extends Sensor implements SelfCheckCapable{
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.20);;
+		return SelfCheckUtils.randomCheck(0.20);
 	}
 
 }

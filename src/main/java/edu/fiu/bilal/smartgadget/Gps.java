@@ -16,6 +16,17 @@ public class Gps implements SelfCheckCapable{
 	private double latitude;
 	private double longitude;
 	
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "GPS Location Active";
+	}
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.randomCheck(0.20);
+	}
+	
 	public void navigate() {
 		/**
 		 * It helps in navigating the vehicle.
@@ -36,15 +47,7 @@ public class Gps implements SelfCheckCapable{
 		 * it will help us to reach the destination.
 		 */
 	}
-	@Override
-	public String getComponentName() {
-		// TODO Auto-generated method stub
-		return "GPS Location Active";
-	}
-	@Override
-	public boolean selfCheck() {
-		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.20);;
-	}
+
+	
 
 }

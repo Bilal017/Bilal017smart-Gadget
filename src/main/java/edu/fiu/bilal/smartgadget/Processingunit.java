@@ -41,7 +41,7 @@ public class Processingunit implements SelfCheckCapable{
 		 * By using this we can put the vehicle into auto park mode and the car will be parked automatically>
 		 */
 	}
-	Public void checkDiagnostics() {
+	public void checkDiagnostics() {
 		/**
 		 * With the help of this we can check Diagnostics of data.
 		 */

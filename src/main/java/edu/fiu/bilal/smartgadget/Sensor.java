@@ -38,7 +38,7 @@ public class Sensor implements SelfCheckCapable{
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.10);;
+		return SelfCheckUtils.randomCheck(0.10);
 	}
 	
 

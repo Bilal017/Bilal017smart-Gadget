@@ -10,7 +10,7 @@ package edu.fiu.bilal.smartgadget;
 public class pedal {
 	private int size;
 	private String design;
-	Private String type;
+	private String type;
 	
 	public void push() {
 		/**

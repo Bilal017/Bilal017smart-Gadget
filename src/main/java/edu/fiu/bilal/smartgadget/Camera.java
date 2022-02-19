@@ -10,8 +10,8 @@ package edu.fiu.bilal.smartgadget;
 public class Camera {
 	private double version;
 	private int resolution;
-	private string size;
-	private string type;
+	private String size;
+	private String type;
 	 
 	public void recognizeObjects(){
 		/**
